@@ -3,11 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 namespace AccessGroupCodingTest.Test2;
 
 [ApiController]
-public class Test2Controller : ControllerBase
+public class Test2Controller(ITest2Service service) : ControllerBase
 {
     [HttpPost("/test2")]
-    public IActionResult Post()
-    {
-        throw new NotImplementedException();
-    }
+    public Task Post(CancellationToken ct) => service.ExecuteAsync(ct);
 }
