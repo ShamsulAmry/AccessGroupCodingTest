@@ -5,7 +5,6 @@ using AccessGroupCodingTest.Test2;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddHttpClient();
 builder.Services.AddSingleton<AccessGroupSettings>();
 builder.Services.AddTest1();
 builder.Services.AddTest2();

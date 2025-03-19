@@ -1,3 +1,6 @@
+using System.Text.Encodings.Web;
+using System.Text.Json;
+
 namespace AccessGroupCodingTest.Test2;
 
 public record TextToSearchResponse(string Text);
@@ -41,7 +44,16 @@ public class Test2RemoteApi(AccessGroupSettings settings, HttpClient httpClient)
 
     public async ValueTask SubmitResultsAsync(SubmitResultsRequest request, CancellationToken ct)
     {
-        var response = await httpClient.PostAsJsonAsync(settings.BaseUrl + Test2RemoteApiUrls.SubmitResults, request, ct);
+        var jsonOptions = new JsonSerializerOptions
+        {
+            Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
+            PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+        };
+
+        var response = await httpClient.PostAsJsonAsync(
+            settings.BaseUrl + Test2RemoteApiUrls.SubmitResults,
+            request, jsonOptions, ct);
+
         response.EnsureSuccessStatusCode();
     }
 }
