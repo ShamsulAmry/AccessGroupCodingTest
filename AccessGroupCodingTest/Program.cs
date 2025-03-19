@@ -1,6 +1,12 @@
+using AccessGroupCodingTest;
+using AccessGroupCodingTest.Test1;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddHttpClient();
+builder.Services.AddSingleton<AccessGroupSettings>();
+builder.Services.AddTest1();
 
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
