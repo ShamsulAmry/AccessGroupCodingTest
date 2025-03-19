@@ -15,11 +15,8 @@ public class SubTextFinderTests
     [InlineData("AAAA", "B", new int[0])]
     public void Find_ShouldReturnCorrectResults(string text, string subText, IReadOnlyList<int> expectedResults)
     {
-        // Arrange
-        ISubTextFinder sut = new  SubTextFinder();
-        
         // Act
-        var results = sut.Find(text, subText).ToList();
+        var results = SubTextFinder.Find(text, subText).ToList();
         
         // Assert
         results.Should().BeEquivalentTo(expectedResults.Select(i => new OneBasedIndex(i)));
