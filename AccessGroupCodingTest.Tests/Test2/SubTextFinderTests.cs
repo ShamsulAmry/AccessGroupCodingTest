@@ -16,7 +16,7 @@ public class SubTextFinderTests
     public void Find_ShouldReturnCorrectResults(string text, string subText, IReadOnlyList<int> expectedResults)
     {
         // Arrange
-        ISubTextFinder sut = null!;
+        ISubTextFinder sut = new  SubTextFinder();
         
         // Act
         var results = sut.Find(text, subText).ToList();
