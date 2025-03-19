@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessGroupCodingTest", "AccessGroupCodingTest\AccessGroupCodingTest.csproj", "{AE80B86F-BDDF-4AD6-BE55-B3C21A20536F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessGroupCodingTest.Tests", "AccessGroupCodingTest.Tests\AccessGroupCodingTest.Tests.csproj", "{519D5E35-0CEC-472A-9F11-651C33870EDE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE80B86F-BDDF-4AD6-BE55-B3C21A20536F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE80B86F-BDDF-4AD6-BE55-B3C21A20536F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE80B86F-BDDF-4AD6-BE55-B3C21A20536F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE80B86F-BDDF-4AD6-BE55-B3C21A20536F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{519D5E35-0CEC-472A-9F11-651C33870EDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{519D5E35-0CEC-472A-9F11-651C33870EDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{519D5E35-0CEC-472A-9F11-651C33870EDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{519D5E35-0CEC-472A-9F11-651C33870EDE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
