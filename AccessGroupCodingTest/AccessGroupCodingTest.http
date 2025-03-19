@@ -1,0 +1,7 @@
+@AccessGroupCodingTest_HostAddress = http://localhost:9999
+
+### Test 1
+GET {{AccessGroupCodingTest_HostAddress}}/
+
+### Test 2
+POST {{AccessGroupCodingTest_HostAddress}}/test2
