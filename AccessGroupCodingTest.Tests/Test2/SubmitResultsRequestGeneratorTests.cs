@@ -9,7 +9,7 @@ public class SubmitResultsRequestGeneratorTests
     public void GenerateRequest_ShouldReturnCorrectResult()
     {
         // Arrange
-        ISubmitResultsRequestGenerator sut = null!;
+        ISubmitResultsRequestGenerator sut = new SubmitResultsRequestGenerator();
         
         // Act
         var textToSearchResponse = new TextToSearchResponse("Peter told me (actually he slurrred) that peter the pickle piper piped a pitted pickle before he petered out. Phew!");

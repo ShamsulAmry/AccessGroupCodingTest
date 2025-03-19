@@ -1,6 +1,9 @@
 namespace AccessGroupCodingTest.Test2;
 
-public readonly record struct OneBasedIndex(int Index);
+public readonly record struct OneBasedIndex(int Index)
+{
+    public override string ToString() => Index.ToString();
+}
 
 public interface ISubTextFinder
 {
